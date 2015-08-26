@@ -1,0 +1,45 @@
+ <form name="competitorForm" ng-submit="addCompetitor()" ng-controller="competitorCtrl" novalidate>
+    <h2 class="form-title">Register for the Contest</h2>
+    <div class="row">
+        <div class="col-md-6">
+            <label>Name:</label>
+            <input ng-model="competitor.name" type="text" class="form-control" required/>
+        </div>
+        <div class="col-md-6">
+            <label>Surname:</label>
+            <input ng-model="competitor.surname" type="text" class="form-control" required/>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <label>Address:</label>
+            <input ng-model="competitor.address" type="text" class="form-control" required/>
+        </div>
+        <div class="col-md-6">
+            <label>Age:</label>
+            <input ng-model="competitor.age" type="number" class="form-control" required/>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <label>Telephone:</label>
+            <input ng-model="competitor.telephone" type="number" class="form-control" required/>
+        </div>
+        <div class="col-md-6">
+            <label>Cellphone:</label>
+            <input ng-model="competitor.cellphone" type="number" class="form-control" required/>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <label>City:</label>
+            <input ng-model="competitor.city" type="text" class="form-control" required/>
+        </div>
+        <div class="col-md-6">
+            <label>Country:</label>
+            <input ng-model="competitor.country" type="text" class="form-control" required/>
+        </div>
+    </div>
+    <input type="submit" value="submit" class="btn btn-default" >
+</form>
+ 

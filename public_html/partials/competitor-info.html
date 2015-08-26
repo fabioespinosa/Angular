@@ -1,0 +1,38 @@
+
+
+
+
+<h2 class="form-title">List of all competitors</h2>
+<div class="panel panel-default">
+    <!-- Default panel contents -->
+    <div class="panel-heading">Competitors</div>
+    <!-- Table -->
+    <table class="table">
+        <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Surname</th>
+            <th>Age</th>
+            <th>Telephone</th>
+            <th>Cellphone</th>
+            <th>Address</th>
+            <th>City</th>
+            <th>Country</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="competitor in competitors | orderBy: 'id'">
+            <td>{{competitor.id}}</td>
+            <td>{{competitor.name}}</td>
+            <td>{{competitor.surname}}</td>
+            <td>{{competitor.age}}</td>
+            <td>{{competitor.telephone}}</td>
+            <td>{{competitor.cellphone}}</td>
+            <td>{{competitor.address}}</td>
+            <td>{{competitor.city}}</td>
+            <td>{{competitor.country}}</td>
+        </tr>
+        </tbody>
+    </table>
+</div> 
